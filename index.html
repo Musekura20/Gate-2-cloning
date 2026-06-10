@@ -1,34 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uni4Edu</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-</head>
-<body>
-   <header>
-    <nav class="bg-white h-12 shadow-lg">
-        <div class="flex items-center ">
-            <p>Become an Agent</p>
-            <p>Partnership</p>
-            <div>
-                <img src="images/EN flag.jpg" alt="" class="w-6 h-5 rounded-sm">
-                <select>
-                    <option>EN</option>
-                    <option>TR</option>
-                    <option>ES</option>
-                    <option>AR</option>
-                    <option>HI</option>
-                    <option>JA</option>
-                </select>
-            </div>
+  </head>
+  <body>
+    <header class="w-full bg-white shadow-md">
+      <div class="hidden md:block border-b border-gray-100">
+        <div class="flex items-center justify-end mr-24 gap-10 py-3">
+          <p class="font-bold">Become an Agent</p>
+          <p class="font-bold">Partnership</p>
+          <div class="flex items-center">
+            <img src="images/EN flag.jpg" alt="" class="w-6 h-5 rounded-sm" />
+            <select class="outline-none">
+              <option>EN</option>
+              <option>TR</option>
+              <option>ES</option>
+              <option>AR</option>
+              <option>HI</option>
+              <option>JA</option>
+            </select>
+          </div>
         </div>
-    </nav>
-   </header>
-</body>
+      </div>
+
+      <div class="py-4 md:py-6 px-6 md:px-12 flex items-center justify-between">
+        <img
+          src="images/uni4edu logo.jpg"
+          alt=""
+          class="w-12 h-12 md:w-16 md:h-16"
+        />
+
+        <nav class="hidden md:flex items-center gap-6 lg:gap-10">
+          <div class="font-bold text-lg">
+            <select>
+              <option>Universities</option>
+            </select>
+          </div>
+          <p class="font-bold text-lg">Masters</p>
+          <div class="font-bold text-lg">
+            <select>
+              <option>Language Schools</option>
+            </select>
+          </div>
+          <div class="font-bold text-lg">
+            <select>
+              <option>Summer Schools</option>
+            </select>
+          </div>
+          <p class="font-bold text-lg">High School</p>
+        </nav>
+
+        <div class="flex items-center gap-4 md:gap-6">
+          <img
+            src="images/icons8-search-50.png"
+            alt=""
+            class="w-6 cursor-pointer"
+          />
+
+          <div class="flex items-center md:hidden">
+            <img src="images/EN flag.jpg" alt="" class="w-6 h-5 rounded-sm" />
+            <select class="outline-none font-bold">
+              <option>EN</option>
+              <option>TR</option>
+            </select>
+          </div>
+
+          <button
+            class="hidden md:block bg-[rgb(95,206,226)] rounded-lg px-5 py-2 font-bold"
+          >
+            Login
+          </button>
+
+          <button class="block md:hidden">
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
